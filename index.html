@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>World Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.32/moment-timezone-with-data.min.js"></script>
+</head>
+
+<body onload=display_ct();>
+    <div id="blur">
+
+        <nav>
+            <div id="logo" class="logo">TimeKeeper</div>
+        </nav>
+
+        <div id="container">
+
+             <div id="col1">
+
+                <div id="border">
+                    <div id="heading">
+                        <p><b>indian standard time</b></p>
+                    </div>
+
+                    <div id="clock-border">
+                        <div id="clockContainer">
+                            <div id="hour"></div>
+                            <div id="minute"></div>
+                            <div id="second"></div>
+                        </div>
+                    </div>
+
+                    <div id="date-time">
+                        <span id='ist'></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="col2">
+
+                <div id="heading2">
+                    <p>most searched place's</p>
+                </div>
+                <div id="row1">
+
+                    <div id="cell">
+                        <div id="img">
+                            <img src="london.png">
+                        </div>
+
+                        <div id="c-name">
+                            <p>london</p>
+                        </div>
+
+                        <div id="time">
+                            <span id="gmt"></span>
+                        </div>
+                    </div>
+
+                    <div id="cell">
+                        <div id="img">
+                            <img src="tokyo.png">
+                        </div>
+
+                        <div id="c-name">
+                            <p>tokyo</p>
+                        </div>
+
+                        <div id="time">
+                            <span id="tokyo"></span>
+                        </div>
+                    </div>
+
+                    <div id="cell">
+                        <div id="img">
+                            <img src="america.png">
+                        </div>
+
+                        <div id="c-name">
+                            <p>new york</p>
+                        </div>
+
+                        <div id="time">
+                            <span id="ny"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="btn">
+                    <a href="worldclock.html"> <button>search more places</button> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
